@@ -1,13 +1,30 @@
+body {
+    background-color:royalblue;
+}
+
 #container {
     display: flex;
     flex-direction: column;
+    align-items: center;
+    background-color: coral;
+    width: 900px;
+    padding: 20px 50px;
+    border-radius: 50px;
+    margin: auto;
+}
+
+#title {
+    font-family: 'Pacifico';
+    font-size: 75px;
+    font-weight: 800;
+    color:gold;
 }
 
 #grid-container {
     display: flex;
     flex-direction: column;
-    width: 500px;
-    height: 500px;
+    width: 800px;
+    height: 800px;
 }
 
 .line {
@@ -17,6 +34,35 @@
 
 .box {
     background-color: gainsboro;
-    border: solid black;
+    border-left: solid gray 1px;
+    border-bottom: solid gray 1px;
+
     flex: auto;
+}
+
+.line.top > .box {
+    border-top: solid gray 1px;
+}
+
+.box.last {
+    border-right: solid gray 1px;
+}
+
+.box.filled {
+    background-color: rgb(115, 115, 115);
+}
+
+#options-container {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+button {
+    font-family: 'Pacifico';
+    font-size: 20px;
+    width: 140px;
+    height: 45px;
+    border-radius: 50px;
+    background-color: gold;
+    border: 2px black solid;
 }
