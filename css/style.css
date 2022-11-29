@@ -1,0 +1,22 @@
+#container {
+    display: flex;
+    flex-direction: column;
+}
+
+#grid-container {
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    height: 500px;
+}
+
+.line {
+    display: flex;
+    flex: auto;
+}
+
+.box {
+    background-color: gainsboro;
+    border: solid black;
+    flex: auto;
+}
